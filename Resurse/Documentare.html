@@ -1,0 +1,69 @@
+<HTML>
+	<HEAD>
+		<TITLE> </TITLE>
+	</HEAD>
+
+	
+	<BODY text="blue" link="blue" vlink="blue" alink="magenta">
+	<H3 align="left">Documentarea paginii web</H3>
+	<HR align="left" width="30%" color="gray">
+	In sectiunea de antet a paginii web (sectiunea HEAD /HEAD) pot fi precizate o multime de 
+informatii care nu vor fi vizibile in pagina web dar care vor fi folosite de serverul pe care va 
+fi stocata pagina web. Ele se numesc <B>METAINFORMATII</B><BR>
+Orice metainformatie va fi precizata in interiorul unei etichete <B>META</B> care este singulara, 
+neavand perechea de sfarsit de metainformatie (/META).<BR>
+Metainformatiile pot cuprinde descrierea paginii web, cuvintele cheie pe baza carora pagina va fi 
+gasita de motoarele de cautare, drepturile de autor, data crearii si reactualizarii, etc.<BR>
+<BR>
+<B>1)Descrierea paginii web</B><BR>
+Pentru a descrie pagina web si a face cunoscut scopul pentru care a fost ea realizata se utilizeaza 
+eticheta META cu doua atribute:<BR>
+<B>name="description"</B> -stabileste faptul ca urmeaza descrierea paginii web<BR>
+<B>content="sir de caractere"</B> -are ca valoare descrierea paginii web<BR>
+Iata un exemplu de descriere a paginii web:<BR>
+<IMG src="Descriere.png" vspace="10" hspace="10"><BR><BR>
+<B>2)Precizarea cuvintelor cheie pentru o pagina web</B><BR>
+Daca pagina web nu ar avea anumite cuvinte cheie ea ar fi "invizibila" pentru motoarele de cautare.
+Pentru a specifica cuvintele cheie ale unei pagini web se foloseste eticheta META cu aceleasi doua 
+atribute: <B>name</B> (configurat la valoarea "keywords") si <B>content</B> (care are ca valoare 
+sirul de cuvinte cheie propuse de autorul paginii).<BR>
+Iata mai jos un exemplu de pagina web cu cuvinte-cheie pentru motoarele de cautare:<BR>
+<IMG src="Chei.png" vspace="10" hspace="10"><BR>
+In exemplul de mai sus este de inteles ca daca un utilizator introduce unul dintre cele 6 cuvinte
+cheie in campul de cautare al unui motor, printre rezultatele gasite va figura si aceasta pagina web.
+<BR><BR>
+<B>3)Precizarea drepturilor de autor</B><BR>
+Pentru specificarea autorului paginii web se utilizeaza eticheta META in care atributul <B>name</B>
+este setat la valoarea <B>"author"</B> iar atributul <B>content</B> va avea drept valoare numele
+autorului paginii web.<BR>
+Un exemplu:<BR>
+<IMG src="Autor.png" vspace="10" hspace="10"><BR><BR>
+<B>4)Data crearii paginii web</B><BR>
+Pentru a furniza serverelor data crearii paginii web se foloseste eticheta META cu atributele
+<B>http-equiv</B> setat la valoarea <B>"creation-date"</B> si atributul <B>content</B>
+avand ca valoare data si ora crearii paginii web.<BR>
+Formatul pentru specificarea datei si orei este:<BR>
+<B>zzz, zz lll aaaa hh:mm:ss, ttt</B><BR>
+unde :<BR>
+zzz este una din zile (Mon, Tue, Wed, Thu, Fri,Sat sau Sun)<BR>
+zz este numarul zilei din luna (01, 02, 03,....., 27,...)<BR>
+lll este luna (Jan,Feb, Mar,Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec)<BR>
+aaaa este anul (ex. 2009)<BR>
+hh:mm:ss reprezinta ora, minutele si secundele<BR>
+ttt reprezinta standardul de timp utilizat (ex. GMT, CET, etc....)<BR>
+Iata un exemplu de setare a datei si orei realizarii paginii web:<BR>
+<IMG src="DataOra.png" vspace="10" hspace="10"><BR><BR>
+<B>5)Reactualizarea automata a paginii web</B><BR>
+Sunt site-uri care in mod necesar trebuie sa se reactualizeze automat la diferite intervale de timp.
+Este de inteles ca evolutia cotarilor la bursa sau rezultatele diferielor meciuri trebuiesc 
+reactualizate la intervale de timp relativ scurte in vederea informarii corecte in timp util a 
+utilizatorilor. Pentru aceasta se utilizeaza eticheta META cu atributul <B>http-equiv </B>
+setat la valoarea <B>"refresh"</B> iar cu atributul <B>content</B> avand ca valoare numarul de secunde
+dupa care pagina se va reactualiza.<BR>
+Mai jos poate fi vazut un cod care reactualizeaza pagina web la fiecare 60 secunde:<BR>
+<IMG src="Refresh.png" vspace="10" hspace="10"><BR><BR>
+
+
+	</BODY>
+
+</HTML>

@@ -1,0 +1,54 @@
+<HTML>
+	<HEAD>
+		<TITLE> </TITLE>
+	</HEAD>
+
+	<BODY text="blue" link="blue" vlink="blue" alink="magenta">
+	<H3 align="left">Fonturi de baza</H3>
+	<HR align="left" width="20%" color="gray">
+	Setarea fonturilor de baza ale paginii web se face cu ajutorul etichetei <B>BASEFONT</B>.
+Prin atributele sale pot fi setate stilul de caractere, marimea lor precum si culoarea. Atributele 
+etichetei basefont sunt urmatoarele:<BR><BR>
+<B>a)face="lista stiluri"</B><BR>
+Prin "lista stiluri" se intelege o insiruire de tipuri de caractere, separate prin virgula. Este
+
+necesar ca in lista sa fie precizate mai multe stiluri de caractere deoarece, daca pe PC-ul unui
+utilizator nu este instalat primul dintre stiluri atunci browserul va "citi" urmatoarea optiune si 
+asa mai departe, pana va gasi un stil de care utilizatorul dispune pe sistemul sau. De exemplu:<BR>
+face="Arial, Courier, Times New Roman" <BR>
+In cazul in care browserul nu gaseste fonturile Arial, va cauta fonturi Courier, etc.<BR>
+<BR>
+<B>b)size="n"</B><BR>
+Atributul size seteaza marimea caracterelor iar n este o valoare numerica cuprinsa intre 1 si 7,
+cea mai mica dimensiune corespunzand pentru size="1" iar cea mai mare pentru size="7".<BR>
+<BR>
+<B>c)color="culoare"</B><BR>
+Atributul color seteaza culoarea caracterelor, fiind posibile cele doua modalitati de specificare
+a culorii: fie un nume valid de culoare in limba engleza, fie o culoare precizata prin codul ei 
+hexazecimal, cu sintaxa "#RRGGBB", asa bum am mai intalnit la atributele etichetei BODY....<BR>
+<BR>
+<B>OBSERVATII:</B><BR>
+Eticheta BASEFONT nu are pereche(nu trebuie inchisa!)... <BR>
+In aceeasi pagina web pot fi modificate fonturile de baza cu ajutorul unei noi etichete BASEFONT...
+<BR><BR>
+
+Exemplul1: utilizarea unei singure etichete BASEFONT
+<BR>
+Iata codul sursa al uneii pagini web in care e utilizata eticheta basefont:<BR>
+<IMG src="CodFontBaza.png" vspace="10" hspace="10"><BR>
+...si iata ce afiseaza browserul:<BR>
+<IMG src="AfisareCodFont.png" vspace="10" hspace="10"><BR><BR>
+
+
+Exemplul2: utilizarea mai multor etichete BASEFONT in aceeasi pagina web 
+(modificarea fontului de baza)<BR>
+Codul sursa:<BR>
+<IMG src="CodFontBaza2.png" vspace="10" hspace="10"><BR>
+...si pagina web afisata de browser:<BR>
+<IMG src="AfisareCodFont2.png" vspace=10" hspace="10"><BR>
+<A href="BlocuriText.html" target="Tabla">Inapoi la Blocuri de text...</A>
+
+
+	</BODY>
+
+</HTML>

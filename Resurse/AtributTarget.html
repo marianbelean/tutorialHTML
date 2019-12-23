@@ -1,0 +1,47 @@
+<HTML>
+	<HEAD>
+		<TITLE> </TITLE>
+	</HEAD>
+
+	
+	<BODY text="blue" link="blue" vlink="blue" alink="magenta">
+	<H3 align="left">Stabilirea ferestrei in care se va deschide pagina web</H3>
+	<HR align="left" width="55%" color="gray">	
+	Decizia locului in care se va deschide pagina web tinta a unei legaturi este luata de 
+catre browser pe baza valorii atributului <B>target</B> al etichetei <B>A</B>.<BR>
+In cazul in care nu este prezent atributul <B>target</B>, browserul va incarca noua pagina web
+in locul celei vechi, in aceeasi instanta a browserului (in aceeasi fereastra).
+Valorile atributului <B>target</B> pot fi:<BR>
+a)<B>target="_blanck"</B><BR>
+In acest caz pagina web tintita de legatura se va incarca intr-o noua instanta a browserului.
+<BR>
+Dati click pe codul de mai jos pentru a deschide pagina web.<BR>
+	<A href="AtributTargetBlanck.html" target="blanck">
+		<IMG src="AtributTargetBlanck.png" vspace="10" hspace="10">
+			</A>
+<BR>
+b)<B>target="_self"</B><BR>
+In acest caz pagina web tinta va lua locul vechii pagini in aceeasi instanta a browserului.
+Aceasta este optiunea implicita, in cazul absentei atributului <B>target</B>.
+Dati click pe codul de mai jos pentru a deschide pagina web.<BR>
+	<A href="AtributTargetSelf.html" target="blanck">
+		<IMG src="AtributTargetSelf.png" vspace="10" hspace="10">
+			</A>
+<BR>
+Daca se doreste incarcarea paginii web tinta intr-unul din cadrele paginii web care contine
+legatura, atunci ca valoare a atributului <B>target</B> se va folosi numele acelui cadru
+setat cu atributul <B>name</B> al etichetei FRAME.<BR>
+c)<B>target="nume_cadru"</B><BR>
+Iata mai jos un exemplu in care mai multe pagini web se incarca in cadre ale paginii web 
+parinte.<BR>
+	<A href="AtributTargetCadru.html" target="blanck">
+		<IMG src="AtributTargetCadru.png" vspace="10" hspace="10">
+			</A>
+<BR>
+<A href="Legaturi.html" target="Tabla"> Inapoi la Legaturi</A>
+		
+
+
+	</BODY>
+
+</HTML>

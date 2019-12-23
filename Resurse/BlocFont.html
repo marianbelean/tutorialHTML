@@ -1,0 +1,66 @@
+<HTML>
+	<HEAD>
+		<TITLE> </TITLE>
+	</HEAD>
+
+	<BODY text="blue" link="blue" vlink="blue" alink="magenta">
+	<H3 align="left">Blocuri FONT</H3>
+	<HR align="left" width="20%" color="gray">
+	O alta metoda pentru formatarea caracterelor este incadrarea blocului de 
+text intre doua etichete FONT si respectiv /FONT.... Atributele etichetei FONT permit 
+configurarea mai multor caracteristici ale fonturilor utilizate in pagina web:<BR>
+<BR>
+
+<B>a)Atributul face="lista fonturi"</B><BR>
+Exista cinci tipuri generice de fonturi care de regula sunt disponibile pe toate calculatoarele:
+Serif, Sans Serif, Cursive, Monospace si Fantasy. Alte fonturi specifice pot fi utilizate doar 
+daca ele sunt utilizate pe calculatorul-client, ca de exemplu Times (un tip particular de font serif), 
+Helvetica (un tip particular de font sans serif), Arial, Courier (un tip particular de font monospace), 
+Western (un tip particular de font fantasy), etc.
+Atributul face permite ca valori o lista de fonturi, de exemplu:<BR>
+face="Arial, serif, monospace"<BR>
+...browserul alegand primul dintre tipurile de fonturi instalat pe calculatorul client.<BR>
+Iata un exemplu de mod in care browserul seteaza tipul de fonturi din lista specificata...<BR>
+<IMG src="FontFace.png" vspace="10" hspace="10"><BR>
+<IMG src="AfisareFace.png" vspace="10" hspace="10"><BR>
+<BR>
+<BR>
+
+<B>b)Atributul color="culoare"</B><BR>
+Atributul color seteaza culoarea cu care vor fi afisate fonturile in pagina web, in doua 
+moduri:<BR>
+-prin specificarea unui nume valid de culoare in limba engleza (de ex. "black", "green", "magenta")<BR>
+-prin specificarea codului hexazecimal al culorii, cu sintaxa color="#RRGGBB" (de ex. "#ff0000")<BR>
+Iata si un exemplu in care este setata doar culoarea fonturilor cu atributul color:<BR>
+<IMG src="FontColor.png" vspace="10" hspace="10"><BR>
+<IMG src="AfisareColor.png" vspace="10" hspace="10"><BR>
+<BR>
+
+<B>c)Atributul size="n"</B><BR>
+Atributul size seteaza dimensiunea fonturilor. Valorile lui n pot fi:<BR>
+-un numar natural intre 1 (pentru cel mai mic font) si 7 (pentru cel mai mare font)<BR>
+-un numar precedat de semnul +, +1, +2.... ceea ce inseamna marirea fonturilor nu n unitati fata 
+de cat erau dimensiunile lor inaintea blocului FONT<BR>
+-un numar precedat de semnul - , -1, -2, .... ceea ce inseamna dimensiuni cu n unitati mai mici 
+fata de fonturile precedeente blocului FONT<BR>
+<IMG src="FontSize.png" vspace="10" hspace="10"><BR>
+<IMG src="AfisareSize.png" vspace="10" hspace="10"><BR>
+<BR>
+
+<B>d)Atributul point-size="n"</B><BR>
+Atributul point-size defineste marimea exprimata in puncte tipografice a fonturilor. Valoarea lui n 
+este orice numar natural.Atributul point-size nu este interpretat de Internet Explorer...<BR>
+<BR>
+
+<B>e)Atributul weight="n"</B><BR>
+Atributul weight seteaza grosimea caracterelor,n putand lua valorile 100 (pentru fontul cel mai
+subtire), 200, 300, 400, 500, 600, 700, 800 si 900 (pentru fontul cel mai gros). Nici atributul 
+weight nu este interpretat de Internet Explorer<BR>
+<BR>
+<A href="BlocuriText.html" target="Tabla">Inapoi la Blocuri de text...</A>
+		
+
+
+	</BODY>
+
+</HTML>

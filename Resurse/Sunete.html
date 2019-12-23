@@ -1,0 +1,36 @@
+<HTML>
+	<HEAD>
+		<TITLE> </TITLE>
+	</HEAD>
+
+	<BODY text="blue" link="blue" vlink="blue" alink="magenta">
+	<H3 align="left">Sunete</H3>
+	<HR align="left" color="gray" width="10%">
+In sectiunea despre Legaturi am vazut ca dintr-o pagina web poate fi lansat in executie un fisier 
+audio cu ajutorul etichetei A si a atributului href care are ca valoare adresa fisierului audio.
+Acest fisier va fi deschis daca pe computerul client este instalat playerul necesar.
+<BR>In ceea ce urmeaza vom arata modul in care o melodie poate fi setata ca sunet de fundal 
+al paginii web.<BR>
+Pentru ca vizitarea paginii web sa fie insotita de un fundal muzical se foloseste eticheta
+fara pereche BGSOUND (background sound - sunet de fundal). Atributele acestei etichete vor
+stabili ce fisier audio va fi executat si de cate ori se va repeta executarea lui.<BR>
+Cele doua atribute ale etichetei BGSOUND sunt:<BR>
+a) <B>src="adresa_fisier_audio"</B> - rolul acestui atribut este de a seta fisierul audio care
+va fi executat.<BR>
+b) <B>loop="n"</B> - rolul acestui atribut este de a seta numarul repetari a executiei
+fisierului audio. Astfel, n poate fi un numar pozitiv ce va insemna numarul de repetari. Daca
+i se atribuie lui n valoarea "-1" sau "infinite" atunci fisierul va fi executat pana cand 
+utilizatorul paraseste pagina web.<BR>
+Iata si un exemplu de pagina web cu o melodie de fundal care se va repeta pana la inchiderea 
+paginii web:<BR>
+<A href="SunetFundal.html" target="_blanck">
+	<IMG src="SunetFundal.png" vspace="10" hspace="10">
+		</A><BR>
+Click pe cod pentru a deschide pagina web.
+
+		
+
+
+	</BODY>
+
+</HTML>

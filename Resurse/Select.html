@@ -1,0 +1,53 @@
+<HTML>
+	<HEAD>
+		<TITLE> </TITLE>
+	</HEAD>
+
+	
+	<BODY text="blue" link="blue" vlink="blue" alink="magenta">
+	<H3 align="left">Eticheta SELECT</H3>
+	<HR align="left" width="20%" color="gray">
+	Listele de selectie sunt cunoscutele casete cu lista ascunsa, din care utilizatorul poate sa aleaga elementul dorit.
+In formulare pot fi utilizate doua tipuri de liste de selectie: liste de selectie unica si liste de selectie multipla.<BR>
+Oricare dintre cele doua tipuri de liste de selectie incepe cu o eticheta <B>SELECT</B> si se termina cu o eticheta <B>
+/SELECT</B>.<BR> Ambele etichete care delimiteaza lista se plaseaza in interiorul blocului FORM respectiv /FORM.<BR><BR>
+<B>Liste de selectie unica</B><BR>
+Se deschide lista cu eticheta SELECT care are doua atribute: <BR>
+-atributul <B>name</b> care asociaza listei un nume care va fi utilizat de scripturi pentru a interpreta valoarea aleasa de 
+utilizator in forma <B>name=valoare</B> si a o prelucra in continuare. <BR>
+-atributul <B>size</B> care are ca valoare un numar pozitiv ce reprezinta numarul de elemente din lista care vor fi vizibile 
+la un moment dat pentru utilizator. Pentru a vedea celelalte elemente se va folosi bara de derulare asociata casetei cu lista.
+<BR>
+Pentru fiecare element al listei de selectie este necesara o eticheta OPTION unica. Cate elemente va contine lista de selectie
+atatea etichete OPTION vor trebui editate in interiorul blocului SELECT respectiv /SELECT.<BR>
+Etichetele OPTION pot avea la randul lor anumite atribute. <BR>
+-atributul <B>value</B> care va avea ca valoare elementul listei. Odata selectat acest element el va fi asociat cu numele 
+listei de selectie si expediat serverului. Dupa eticheta OPTION va fi trecut numele necodificat al elementului listei
+asa cum il va vedea utilizatorul.<BR>
+-atributul <B>selected</B> fara vreo valoare dupa el desemneaza acel element al listei ca fiind implicit selectat. In lista 
+de selectie unica un singur element poate avea la un moment dat acest atribut.<BR>
+Dupa popularea listei cu elemente se incheie lista cu eticheta /SELECT.<BR>
+Iata mai jos un exemplu de formular cu lista de selectie unica si cu doua butoane, unul de expediere si unul de initializare:
+<BR>
+<A href="ExempluSelect.html" target="blank"><IMG src="ExempluSelect.png" vspace="10" hspace="10"></A><BR>
+Puteti verifica initializarea produsa de butonul Sterge, dar nu dati click pe butonul Trimite pentru ca adresa de e-mail 
+este fictiva!<BR>
+Atentie!!!... Sa nu se faca confuzie intre ceea ce vede utilizatorul in lista si ceea ce este trimis serverului! Daca de 
+exemplu se selecteaza Anaconda, atunci serverului ii va fi trimis <B>film="A"</B> adica codificarea prin valoarea 
+atributului value a elementului listei de selectie.<BR><BR>
+<B>Liste de selectie multipla</B><BR>
+Singura diferenta in ceea ce priveste sintaxa fata de listele de selectie unica consta in faptul ca o lista de selectie 
+multipla are un atribut care o diferentiaza: atributul <B>multiple</B> al etichetei SELECT.<BR>
+Atributul <B>multiple</b>nu are nici o valoare, simpla lui prezenta in eticheta SELECT permitand selectarea mai multor
+elemente.<BR>
+Iata exemplificat cele spuse mai sus:<BR>
+<A href="ExempluSelectN.html" target="blank"><IMG src="ExempluSelectN.png" vspace="10" hspace="10"></A><BR>
+Pentru a selecta mai multe elemente ale listei neadiacente folositi combinatia Ctrl+click iar pentru a selecta mai 
+multe elemente adiacente selectati intai primul element din grup iar apoi cu combinatia Shift+click ultimul element
+din grup.<BR>
+<A href="Controale.html" target="Tabla">Inapoi la Controale</A>		
+
+
+	</BODY>
+
+</HTML>

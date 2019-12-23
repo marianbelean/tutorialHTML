@@ -1,0 +1,93 @@
+<HTML>
+	<HEAD>
+		<TITLE> </TITLE>
+	</HEAD>
+
+	<BODY text="blue" link="blue" vlink="blue" alink="magenta">
+	<H3 align="left">Blocuri de text si atributele etichetei BODY</H3>
+	<HR align="left" width="50%" color="gray">
+	Pentru setarea unora dintre caracteristicile textului afisat in paginile web
+pot fi utile atribute ale etichetei BODY. Partea proasta este ca, aceasta ar insemna ca 
+tot textul din pagina web ar trebui sa arate la fel!... Partea buna este ca HTML pune la dispozitie 
+si alte instrumente pentru formatarea caracterelor, dupa cum se va vedea in continuare.
+Din punct de vedere al blocurilor de text, cele mai utile atribute ale etichetei BODY sunt:<BR>
+<BR>
+<B>a)atributul bgcolor="culoare"</B><BR>
+Valoarea atributului bgcolor (culoare de fundal) pot fi:<BR>
+	-un nume valid de culoare in limba engleza ("red", "green", yellow", "lightgreen", etc.)<BR>
+	-un cod hexazecimal al culorii cu sintaxa "#RRGGBB" unde semnul # indica faptul ca urmeaza 
+un cod hexazecimal. Semnificatia codului este urmatoarea: RR (RED)sunt doua cifre 
+hexazecimale care determina gradul de rosu al culorii, GG (GREEN) indica gradul de verde 
+iar BB (BLUE) gradul de albastru. valorile acestor cifre in sistemul hexazecimal pot fi 0,1,2,
+3,4,5,6,7,8,9,a,b,c,d,e si f, adica cele 16 "cifre" ale sistemului hexazecimal. Iata cateva 
+exemple:<BR>
+"#ff0000"-reprezinta culoarea rosie (maximum rosu, nimic verde si nimic albastru<BR>
+"#00ff00-reprezinta culoarea verde, fara amestec de rosu sau albastru<BR>
+"#0000ff"-reprezinta culoarea albastra, fara amestec de rosu sau verde<BR>
+"#000000"-reprezinta culoarea neagra
+"#ffffff"-reprezinta culoarea alba, amestec maxim de rosu, verde si albastru<BR>
+...In felul acesta pot fi definite 65536 culori!!!<BR>
+Iata cateva exemple si efectele lor:<BR>
+<IMG src="CuloareFundal1.png" align="left" vspace="10" hspace="10">
+<IMG src="AfisareFundal1.png" vspace="10" hspace="10"<BR>
+<IMG src="CuloareFundal2.png" align="left" vspace="10" hspace="10">
+<IMG src="AfisareFundal2.png" vspace="10" hspace="10"<BR>
+<IMG src="CuloareFundal3.png" align="left" vspace="10" hspace="10">
+<IMG src="AfisareFundal3.png" vspace="10" hspace="10"<BR>
+<IMG src="CuloareFundal4.png" align="left" vspace="10" hspace="10">
+<IMG src="AfisareFundal4.png" vspace="10" hspace="10"<BR>
+<BR>
+<B>b)atributul text="culoare"</B><BR>
+Atributul text seteaza prin valorile sale culoarea caracterelor afisate in pagina web. 
+Valorile acestui atribut sunt, ca si in cazul etichetei bgcolor, sau un nume valid de culoare
+in limba engleza, sau un cod hehazecximal al culorii cu sintaxa #RRGGBB, asa cum a fost aratat mai sus....
+<BR>
+Iata cateva exemple in care a fost setata atat culoarea de fundal cat si culoarea caracterelor:<BR>
+<IMG src="CuloareText1.png" align="left" vspace="10" hspace="10">
+<IMG src="AfisareCulText1.png" vspace="10" hspace="10"<BR>
+<IMG src="CuloareText2.png" align="left" vspace="10" hspace="10">
+<IMG src="AfisareCulText2.png" vspace="10" hspace="10"<BR><BR>
+
+<B>c)atributul background="adresa"</B><BR>
+Atributul background defineste o imagine de fundal pentru pagina web, valoarea atributului fiind chiar
+adresa fisierului imagine. In cazul in care fisierul imagine este chiar in acelasi dosar cu 
+pagina web este suficient ca adresa sa se rezume la numele fisierului. In cazul in care 
+fisierul imagine este situat pe alt disc, trebuie specificata unitatea(partitia), structura 
+de subdosare pana la dosarul parinte al imaginii si terminand cu numele fisierului.<BR><BR>
+background="disc:\Dosar1\Subdosar2\.......\SubdosarN\fisier.png"<BR><BR>
+Iata un exemplu:<BR>
+<IMG src="CodPisici.png"  vspace="10" hspace="10"><BR><BR>
+<A href="Pisici.html" target="_blank">Click aici pentru a deschide pagina web Pisici.htm</A>
+<BR><BR>
+In cazul in care dimensiunile pozei de fundal sunt mai mici decat fereastra Internet Explorer,
+poza se va multiplica atat pe latime cat si pe inaltime, astfel incat intreg fundalul paginii
+web sa fie ocupat de imagine...<BR>
+Iata si cateva exemple de formate de imagini suportate de browsere:
+<UL type="disc">
+	<LI>GIF (Graphics Interchange Format) cu extensia .gif;
+	<LI>JPEG (Joint Photographic Experts Group) cu extensia .jpeg sau .jpg;
+	<LI>BMP (BitMap) cu extensia .bmp;
+	<LI>PNG (Portable Network Graphics) cu extensia .png;
+	<LI>etc. ...........
+</UL>
+
+<B>d)Setari de pozitionare fata de merginile paginii web</B><BR>
+Atributele care definesc pozitionarea textului fata de marginea superioara sau stanga a paginii 
+web sunt <B>topmargin</B> si respectiv <B>leftmargin</B>, cu sintaxa:<BR>
+topmargin="n"<BR>
+leftmargin="m"<BR>
+...unde m si n sunt sau doua numere reprezentand distanta in pixeli, sau procente din dimensiunea 
+corespunzatoare a ecranului.<BR>
+Iata mai jos cateva exemple de cod si efectul lor in pagina web:<BR>
+<IMg src="CodMargini.png" align="left" vspace="10" hspace="10">
+<IMg src="AfisareMargini.png"  vspace="10" hspace="10"><BR><BR>
+
+<IMg src="CodMargini2.png" align="left" vspace="10" hspace="10">
+<IMg src="AfisareMargini2.png"  vspace="10" hspace="10"><BR>
+<BR>
+<A href="BlocuriText.html" target="Tabla">Inapoi la Blocuri de text...</A>
+
+
+	</BODY>
+
+</HTML>
